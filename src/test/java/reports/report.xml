@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="53.237" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Login and shopping test" name="Userid test" time="20.21">
+<system-out><![CDATA[
+Given browser "chrome" is open with url "https://www.amazon.in" and initialize reportname "AmazonLogin" and testname "Logintest".passed
+And i click on signin link..................................................passed
+When I enter valid username "paragguide@yahoo.co.in"........................passed
+And click continue button...................................................passed
+Then I validate the userid..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and shopping test" name="Password test" time="18.605">
+<system-out><![CDATA[
+Given userid is valid.......................................................passed
+When enter the valid password which is "RMinfotech12#&&"....................passed
+Then i should login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and shopping test" name="search for products - #1.1" time="5.076">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for product Shirt in range 2000...............................passed
+Then search results should come.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and shopping test" name="search for products - #1.2" time="2.282">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for product Pant in range 3500................................passed
+Then search results should come.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and shopping test" name="search for products - #1.3" time="6.04">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for product Tie in range 500..................................passed
+Then search results should come.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and shopping test" name="close browser session" time="0.739">
+<system-out><![CDATA[
+When all work complete close session........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
